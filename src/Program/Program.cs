@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 using Library;
 
@@ -37,6 +38,20 @@ namespace Program
             // Enviar un correo a algunos contactos
 
             // Enviar un WhatsApp a algunos contactos
+
+            WhatsAppChannel whatsappChannel = new WhatsAppChannel();
+            Contact from = phonebook.Owner;
+
+            String[] destinatarios = new string [] {"Maru", "Mateo"};
+            List<Contact> contactosDestinatarios =phonebook.Search(destinatarios);
+
+            WhatsAppMessage mensaje = (WhatsAppMessage)whatsappChannel.CreateMessage(from, contactosDestinatarios[0]);
+
+            foreach (Contact destinatario in contactosDestinatarios)
+            {
+                mensaje.To = destinatario.Phone;
+                whatsappChannel.Send(mensaje);
+            }
 
             // Enviar un SMS a algunos contactos
         }
