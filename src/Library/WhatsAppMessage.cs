@@ -7,5 +7,5 @@ public class WhatsAppMessage : Message
     {
         // Intencionalmente en blanco
     }
-    public string To { get; set; }
+    public new string To { get; set; }
 }
