@@ -13,6 +13,8 @@ namespace Program
             dueño.Email = ("mariaemiliacostanian@gmail.com");
 
             // Crear la lista de contactos
+            
+            Phonebook phonebook = new Phonebook(dueño);
 
             // Agregar contactos a la lista
 
