@@ -8,6 +8,9 @@ namespace Program
         static void Main(string[] args)
         {
             // Crear el contacto dueño
+            Contact dueño = new Contact ("Emilia");
+            dueño.Phone = ("+59899881100");
+            dueño.Email = ("mariaemiliacostanian@gmail.com");
 
             // Crear la lista de contactos
 
