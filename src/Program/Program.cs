@@ -52,6 +52,7 @@ namespace Program
                 whatsappChannel.Send(mensaje);
             }
 
+            Console.WriteLine(phonebook);
             // Enviar un SMS a algunos contactos
         }
     }
