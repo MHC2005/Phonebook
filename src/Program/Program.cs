@@ -38,7 +38,6 @@ namespace Program
             // Enviar un correo a algunos contactos
 
             // Enviar un WhatsApp a algunos contactos
-
             WhatsAppChannel whatsappChannel = new WhatsAppChannel();
             Contact from = phonebook.Owner;
 
